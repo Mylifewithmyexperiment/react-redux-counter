@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import {useSelector,useDispatch} from  'react-redux';
 import isLoggedReducers from "./reducers/isLogged";
-import {increment, decremernt} from './action';
+import {increment, decremernt ,reset} from './action';
 
 
 function App() {
@@ -16,7 +16,7 @@ return (
    
     <button onClick ={()=> dispatch(increment())} > +  </button>
     <button onClick ={()=> dispatch(decremernt())} > -  </button>
-
+    <button onClick={() =>dispatch(reset())  }>  Reset </button>
 
     {isLogged ?   <h1>you are logged in  </h1> :''   }
     

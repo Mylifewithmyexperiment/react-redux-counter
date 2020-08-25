@@ -4,8 +4,7 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { createStore, combineReducers } from "redux";
-import counterReducers from "./reducers/counter";
-import isLoggedReducers from "./reducers/isLogged";
+
 import AddAllReducers from "./reducers";
 import { Provider   } from "react-redux";
 //import { createStore  } from "redux";
